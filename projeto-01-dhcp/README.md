@@ -63,13 +63,13 @@ VM Cliente (192.168.10.10) - Windows 11 Pro
 
 **Evidências:**
 
-> **VM Servidor:**
+> **VM Servidor:**</br></br>
 > ![VM Servidor](evidencias/4.1-configuracao-vm-servidor.png)
 
-> **VM Cliente:**
+> **VM Cliente:**</br></br>
 >![VM Cliente](evidencias/4.1-configuracao-vm-cliente.png)
 
->**IP APIPA:**
+>**IP APIPA:**</br></br>
 >![IP APIPA](evidencias/4.1-apipa-vms.png)
 
 **Resultado:** As duas VMs iniciaram corretamente na rede interna. Como ainda não há servidor DHCP configurado, ambas receberam um endereço APIPA, comportamento esperado nesse estágio, que confirma que a rede interna está funcionando de forma isolada.
@@ -92,11 +92,10 @@ VM Cliente (192.168.10.10) - Windows 11 Pro
 
 **Evidências:**
 
-> **Instalação do DHCP:**
+> **Instalação do DHCP:**</br></br>
 > ![Instalação do DHCP](evidencias/4.2-instalacao-progresso.png)
 
-> **DHCP Instalado:**
-> 
+> **DHCP Instalado:**</br></br>
 > ![DHCP Instalado](evidencias/4.2-dhcp-instalado.png)
 
 **Resultado:** A role DHCP foi instalada com sucesso no servidor. O serviço aparece no painel do Server Manager com status ativo, indicando que o servidor está pronto para ser configurado como distribuidor de endereços IP na rede.
@@ -128,10 +127,10 @@ VM Cliente (192.168.10.10) - Windows 11 Pro
 
 **Evidências:**
 
-> **Intervalo de IPs:**
+> **Intervalo de IPs:**</br></br>
 > ![Intervalo de IPs](evidencias/4.3-intervalo-ips.png)
 
-> **Scope Active:**
+> **Scope Active:**</br></br>
 > ![Scope Active](evidencias/4.3-scope-ativo.png)
 
 **Resultado:** O escopo foi criado e ativado com sucesso. O servidor DHCP está configurado para distribuir endereços IP na faixa `192.168.10.10` até `192.168.10.100` para os dispositivos conectados na rede `labrede`.
@@ -157,12 +156,11 @@ VM Cliente (192.168.10.10) - Windows 11 Pro
 
 **Evidências:**
 
-> **IP Fixo:**
-> 
+> **IP Fixo:**</br></br>
 > ![IP Fixo](evidencias/4.4-ip-fixo-propriedades.png)
 
 
-> **Confirmação do IP Fixo:**
+> **Confirmação do IP Fixo:**</br></br>
 > ![Confirmação do IP Fixo](evidencias/4.4-ipconfig-servidor.png)
 
 **Resultado:** O servidor passou a operar com o endereço IP fixo `192.168.10.2`, garantindo que os clientes da rede sempre consigam localizá-lo pelo mesmo endereço, independente de reinicializações ou alterações no serviço DHCP.
@@ -182,10 +180,10 @@ VM Cliente (192.168.10.10) - Windows 11 Pro
 
 **Evidências:**
 
-> **Saída no Cliente:**
+> **Saída no Cliente:**</br></br>
 > ![Saída no Cliente](evidencias/4.5-ipconfig-cliente.png)
 
-> **Teste de Conectividade:**
+> **Teste de Conectividade:**</br></br>
 > ![Teste de Conectividade](evidencias/4.5-ping-servidor.png)
 
 **Resultado:** A VM Cliente recebeu o endereço `192.168.10.10` automaticamente via DHCP e conseguiu se comunicar com o servidor através do ping, confirmando que a rede interna está funcionando corretamente e o serviço DHCP está operacional.
@@ -209,13 +207,13 @@ VM Cliente (192.168.10.10) - Windows 11 Pro
 
 **Evidências:**
 
-> **Serviço DHCP Interrompido:**
+> **Serviço DHCP Interrompido:**</br></br>
 > ![Serviço DHCP Interrompido](evidencias/5.1-dhcp-parado.png)
 
-> **Cliente com IP APIPA - Sem Servidor DHCP:**
+> **Cliente com IP APIPA - Sem Servidor DHCP:**</br></br>
 > ![Cliente com IP APIPA - Sem Servidor DHCP](evidencias/5.2-cliente-apipa.png)
 
->**Teste de Conectividade - 100% de Perda:**
+>**Teste de Conectividade - 100% de Perda:**</br></br>
 >![Teste de Conectividade - 100% de Perda](evidencias/5.3-ping-100-perda.png)
 
 ---
@@ -243,13 +241,13 @@ VM Cliente (192.168.10.10) - Windows 11 Pro
 
 **Evidências da resolução:**
 
-> **Serviço DHCP Reiniciado:**
+> **Serviço DHCP Reiniciado:**</br></br>
 > ![Serviço DHCP Reiniciado](evidencias/7.1-dhcp-reiniciado.png)
 
-> **IP Restabelecido:**
+> **IP Restabelecido:**</br></br>
 > ![IP Restabelecido](evidencias/7.2-ip-restabelecido.png)
 
->**Conectividade Restaurada:**
+>**Conectividade Restaurada:**</br></br>
 >![Conectividade Restaurada](evidencias/7.3-ping-restaurado.png)
 
 **Tempo de resolução estimado:** Menos de 5 minutos, desde a identificação do APIPA até o restabelecimento da conectividade.
