@@ -10,7 +10,7 @@ O objetivo é documentar de forma técnica e profissional cada projeto executado
 
 **Nome:** Galdino  
 **Objetivo:** Transição de carreira para a área de TI/Cibersegurança  
-**Meta:** Primeiro oportunidade de emprego na área</br>
+**Meta:** Primeira oportunidade de emprego na área</br>
 **GitHub:** [SrLucasGaldinor](https://github.com/SrLucasGaldinor)
 
 ---
