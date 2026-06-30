@@ -31,6 +31,7 @@ O objetivo é documentar de forma técnica e profissional cada projeto executado
 | # | Projeto | Descrição | Status |
 |---|---------|-----------|--------|
 | 01 | [DHCP: Configuração, Falha e Recuperação](projeto-01-dhcp/README.md) | Configuração de servidor DHCP, simulação de falha APIPA e recuperação | ✅ Concluído |
+| 02 | [Active Directory: Gestão do Dia a Dia](projeto-02-active-directory/README.md) | Promoção a Domain Controller, OUs, grupos e tickets de suporte (reset de senha, desbloqueio, transferência, desligamento) | 🔄 Em andamento |
 
 ---
 
